@@ -12,6 +12,8 @@ from tqdm import tqdm
 import os
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
+icn = True
+
 model_path = "meta-llama/Meta-Llama-3-8B-Instruct"
 tokenizer = AutoTokenizer.from_pretrained(model_path)
 generator = AutoModelForCausalLM.from_pretrained(model_path)
@@ -86,7 +88,7 @@ for data in bar:
             prompt = f'''{instruction}
 
 Here are different ways to solve the problem:
-{verbalize_escape([])}'''
+{verbalize_escape(escape_list if icn else [])}'''
 
             logits = generator(**tokenizer(prompt, return_tensors="pt").to("cuda"), output_hidden_states=True).logits[0, -1]
             ids = logits.argsort(descending=True)[:topk]
