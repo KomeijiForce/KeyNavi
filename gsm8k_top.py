@@ -109,8 +109,6 @@ Here are different ways to solve the problem:
 ''' + entity + "**Final Answer (Only Number):** \""
                     all_decoded.append(decode(for_decode))
 
-                    print(all_decoded)
-                    
                     break
 
     my_answer = Counter(all_decoded).most_common(1)[0][0]
