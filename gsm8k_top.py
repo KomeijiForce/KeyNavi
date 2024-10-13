@@ -17,7 +17,6 @@ tokenizer = AutoTokenizer.from_pretrained(model_path)
 generator = AutoModelForCausalLM.from_pretrained(model_path)
 generator.eval()
 generator = generator.to("cuda")
-generator.eval()
 
 def probe(seq):
     input_ids = tokenizer(seq, return_tensors="pt").input_ids.to("cuda")
