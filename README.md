@@ -10,7 +10,7 @@ Some knowledge is memorized by LLMs, but you cannot prompt to get it - we provid
 
 3) ICN improves generation diversity and self-consistency in knowledge probing, open-ended generation, and chain-of-thought reasoning.
 
-## Quick start ⚡
+## ⚡ Quick start
 
 ### The clusters of vocabulary representations
 
@@ -29,3 +29,25 @@ You can check the illustration of vocabulary representation clusters in Huggingf
 ### Spurious Key Correlation
 
 In ```Spurious_Key_Correlation.ipynb```, we provide a pipeline to show how the next tokens predicted from different clusters from the top predictions are more accurate.
+
+## 🐾 Citation 
+
+```
+@article{DBLP:journals/corr/abs-2410-02284,
+  author       = {Letian Peng and
+                  Chenyang An and
+                  Jingbo Shang},
+  title        = {Correlation and Navigation in the Vocabulary Key Representation Space
+                  of Language Models},
+  journal      = {CoRR},
+  volume       = {abs/2410.02284},
+  year         = {2024},
+  url          = {https://doi.org/10.48550/arXiv.2410.02284},
+  doi          = {10.48550/ARXIV.2410.02284},
+  eprinttype    = {arXiv},
+  eprint       = {2410.02284},
+  timestamp    = {Thu, 07 Nov 2024 15:42:46 +0100},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-2410-02284.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+```
