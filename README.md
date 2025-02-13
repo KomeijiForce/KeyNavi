@@ -26,3 +26,6 @@ Some knowledge is memorized by LLMs, but you cannot prompt to get it - we provid
 
 You can check the illustration of vocabulary representation clusters in Huggingface for [llama-3](https://huggingface.co/datasets/KomeijiForce/llama3_vocabulary_cluster) and [olmo](https://huggingface.co/datasets/KomeijiForce/olmo_vocabulary_cluster). Some cluster examples are illustrated above.
 
+### Spurious Key Correlation
+
+In ```Spurious_Key_Correlation.ipynb```, we provide a pipeline to show how the next tokens predicted from different clusters from the top predictions are more accurate.
